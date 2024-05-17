@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int Calculate_Square(int Number);
+
+int main() {
+    int number, Square;
+    printf(" \n Please enter a number: ");
+    scanf("%d", &number);
+    Square = Calculate_Square(number);
+    printf("The square of %d is %d.", number, Square);
+    return 0;
+}
+
+int Calculate_Square(int Number) {
+    return Number * Number;
+}
